@@ -6,8 +6,8 @@
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
 </head>
 <body style="font-family:sans-serif;text-align:center;margin-top:100px;">
-  <h1>🔥 CLICK THE BUTTON TO MAKE IT CLACK 🔥</h1>
-  <button id="clickBtn" style="padding:20px 50px;font-size:30px;">CLICK</button>
+  <h1>🔥 CLICK THE BUTTON TO MAKE IT GO WEEEEE 🔥</h1>
+  <button id="clickBtn" style="padding:20px 50px;font-size:30px;">CLICK ME</button>
   <p id="status" style="margin-top:30px;font-size:18px;"></p>
 
   <script>
@@ -30,7 +30,7 @@
     btn.onclick = () => {
       db.ref("relayClack").set(true)
         .then(() => {
-          status.innerText = "✅ CLICKED. RELAY GOING BONKERS!";
+          status.innerText = "✅ CLICKED. BUZZER GOIN BONKERZZZZ GOING BONKERS!";
         })
         .catch((err) => {
           status.innerText = "❌ ERROR: " + err;
